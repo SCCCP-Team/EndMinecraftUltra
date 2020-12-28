@@ -30,6 +30,12 @@ public class MCForge {
             @Override
             public void packetSending(PacketSendingEvent e) {}
             public void packetSent(PacketSentEvent e){}
+
+            @Override
+            public void packetError(PacketErrorEvent packetErrorEvent) {
+
+            }
+
             public void connected(ConnectedEvent e){
                 modifyHost();
             }
